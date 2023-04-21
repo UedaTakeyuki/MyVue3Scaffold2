@@ -15,14 +15,17 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: ['vue'],
+      external: [
+        'vue',
+        'vue-router',
+      ],
       plugins: [
         analyze(), 
         visualizer(),
       ],
-      globals: {
+/*      globals: {
         'vue': 'Vue',
-      },
+      },*/
     },
   },
 })
