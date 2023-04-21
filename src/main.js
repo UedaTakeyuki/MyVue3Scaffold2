@@ -6,6 +6,7 @@ import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router
 
 import './assets/main.css'
 
+// router
 const routes = [
   { path: '/', component: Home },
   { path: '/about', component: About },
@@ -18,4 +19,7 @@ const router = createRouter({
   routes, // short for `routes: routes`
 })
 
-createApp(App).use(router).mount('#app')
+// vuetify
+const { createVuetify } = Vuetify
+const vuetify = createVuetify()
+createApp(App).use(router).use(vuetify).mount('#app')
