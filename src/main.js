@@ -20,6 +20,7 @@ const router = createRouter({
 })
 
 // vuetify
-const { createVuetify } = Vuetify
+// const { createVuetify } = Vuetify
+import { createVuetify } from 'vuetify'
 const vuetify = createVuetify()
 createApp(App).use(router).use(vuetify).mount('#app')
