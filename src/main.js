@@ -3,6 +3,7 @@ import App from './App.vue'
 import Home from '/src/views/Home.vue'
 import About from '/src/views/About.vue'
 import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
+import { createVuetify } from 'vuetify'
 
 import './assets/main.css'
 
@@ -18,9 +19,10 @@ const router = createRouter({
   //history: createWebHashHistory(),
   routes, // short for `routes: routes`
 })
+console.log("window", window)
 
 // vuetify
-const { createVuetify } = Vuetify
-// import { createVuetify } from 'vuetify'
-const vuetify = createVuetify()
-createApp(App).use(router).use(vuetify).mount('#app')
+//const { createVuetify } = Vuetify
+//import { createVuetify } from 'vuetify'
+const vuetifyBody = createVuetify()
+createApp(App).use(router).use(vuetifyBody).mount('#app')

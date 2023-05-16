@@ -17,6 +17,7 @@ export default defineConfig({
     rollupOptions: {
       external: [
         'vue',
+        'vuetify',
         'vue-router',
       ],
       plugins: [
